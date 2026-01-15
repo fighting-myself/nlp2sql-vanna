@@ -1,5 +1,6 @@
 # nlp2sql-vanna
-智能多数据库查询助手 (Intelligent Multi-Database Query Assistant)  这是一个基于Streamlit和Vanna框架构建的智能数据库查询平台，支持MySQL数据库的自动发现、智能学习和自然语言查询。项目集成了阿里云Qwen大模型，能够将自然语言问题自动转换为SQL查询语句，大大简化了数据库查询流程。
+智能多数据库查询助手 (Intelligent Multi-Database Query Assistant)  这是一个基于Streamlit和Vanna框架构建的智能数据库查询平台，支持MySQL数据库的自动发现、智能学习和自然语言查询。
+项目集成了阿里云Qwen大模型，能够将自然语言问题自动转换为SQL查询语句，大大简化了数据库查询流程。
 
 # 智能多数据库查询助手 🤖
 
@@ -50,21 +51,23 @@
 ## 1.**克隆仓库**
 ```bash
 cd nlp2sql-vanna
-
+```
 ## 2.**配置环境变量**
-# 数据库配置
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=your_password
+### 数据库配置
+DB_HOST=localhost  
+DB_PORT=3306  
+DB_USER=root  
+DB_PASSWORD=your_password  
 
-# 阿里云API配置
-ALI_API_KEY=your_aliyun_api_key
-ALI_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
-VANNA_MODEL=qwen-plus
+### 阿里云API配置
+ALI_API_KEY=your_aliyun_api_key  
+ALI_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1  
+VANNA_MODEL=qwen-plus  
 
 ## 3.**运行程序**
+```bash
 streamlit run app.py
+```
 
 ## 4.**访问界面**
 localhost:8501

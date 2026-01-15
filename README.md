@@ -47,10 +47,24 @@
 
 ### 安装步骤
 
-1. **克隆仓库**
+## 1.**克隆仓库**
 ```bash
 cd nlp2sql-vanna
+
+## 2.**配置环境变量**
+# 数据库配置
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=your_password
+
+# 阿里云API配置
+ALI_API_KEY=your_aliyun_api_key
+ALI_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+VANNA_MODEL=qwen-plus
+
+## 3.**运行程序**
 streamlit run app.py
 
-2. **访问界面**
+## 4.**访问界面**
 localhost:8501
